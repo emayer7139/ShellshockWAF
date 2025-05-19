@@ -4,7 +4,7 @@ A simple, host-based WAF to block Shellshock-style Bash exploits and related CGI
 
 ## Repository Contents
 
-
+```
 ├── deploy-waf.sh # Bootstrap installer script
 ├── README.md # This file
 ├── nginx/ # NGINX config snippets
@@ -16,7 +16,7 @@ A simple, host-based WAF to block Shellshock-style Bash exploits and related CGI
 │ ├── apache-shellshock.conf
 │ └── nginx-shellshock.conf
 └── jail.local
-
+```
 ---
 
 ## Prerequisites
