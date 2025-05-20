@@ -39,23 +39,11 @@ A simple, host-based WAF to block Shellshock-style Bash exploits and related CGI
    sudo bash deploy-waf.sh
 
 3. ## Testing Your WAF
-   Shellshock Ban Test
-
-   ### Should NOT return "vulnerable"
-   env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
-
-   ### Should be dropped by iptables (no response):
-   printf "GET / HTTP/1.1\r\nHost: localhost\r\nUser-Agent: () { :;}; echo PWNED\r\n\r\n" | nc localhost 80
-
-   ### Apache 403 test:
-   curl -I -H 'User-Agent: () { :;}; echo PWNED' http://localhost/
-
-   ### NGINX 403 test:
-   curl -I -H 'User-Agent: () { :;}; echo PWNED' http://localhost/
-
-   ### Fail2Ban match test:
-   sudo fail2ban-regex /var/log/apache2/error.log /etc/fail2ban/filter.d/apache-shellshock.conf
-
+   ```bash
+   sudo chmod +x test_waf.sh
+   sudo ./test_waf.sh
+   ```
+   This will go over each aspect of the code for nginx, apache, fail2ban, and check your bash version. This test does work for continers as well. 
 
 ## Contributing
    1. Fork repository
