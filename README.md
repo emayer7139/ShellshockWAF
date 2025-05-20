@@ -1,4 +1,19 @@
-# ShellshockWAF
+
+  .--.--.     ,---,                ,--,    ,--,     .--.--.     ,---,                              ,-.
+ /  /    '. ,--.' |              ,--.'|  ,--.'|    /  /    '. ,--.' |                          ,--/ /|
+|  :  /`. / |  |  :              |  | :  |  | :   |  :  /`. / |  |  :       ,---.     ,---.  ,--. :/ |
+;  |  |--`  :  :  :              :  : '  :  : '   ;  |  |--`  :  :  :      '   ,'\   '   ,'\ :  : ' /
+|  :  ;_    :  |  |,--.   ,---.  |  ' |  |  ' |   |  :  ;_    :  |  |,--. /   /   | /   /   ||  '  /
+ \  \    `. |  :  '   |  /     \ '  | |  '  | |    \  \    `. |  :  '   |.   ; ,. :.   ; ,. :'  |  :
+  `----.   \|  |   /' : /    /  ||  | :  |  | :     `----.   \|  |   /' :'   | |: :'   | |: :|  |   \
+  __ \  \  |'  :  | | |.    ' / |'  : |__'  : |__   __ \  \  |'  :  | | |'   | .; :'   | .; :'  : |. \
+ /  /`--'  /|  |  ' | :'   ;   /||  | '.'|  | '.'| /  /`--'  /|  |  ' | :|   :    ||   :    ||  | ' \ \
+'--'.     / |  :  :_:,''   |  / |;  :    ;  :    ;'--'.     / |  :  :_:,' \   \  /  \   \  / '  : |--'
+  `--'---'  |  | ,'    |   :    ||  ,   /|  ,   /   `--'---'  |  | ,'      `----'    `----'  ;  |,'
+            `--''       \   \  /  ---`-'  ---`-'              `--''                          '--'
+                         `----'
+
+                            S h e l l s h o c k   &   C G I   W A F
 A simple, host-based WAF to block Shellshock-style Bash exploits and related CGI injection attacks on Ubuntu servers running Apache, NGINX, and PHP—no ModSecurity required. Clone this repo and run the bootstrap script on each target host to instantly deploy multi-layer defenses.
 
 
